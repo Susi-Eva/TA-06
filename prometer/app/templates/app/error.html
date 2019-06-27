@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>PROMETER</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://webapplayers.com/luna_admin-v1.3/vendor/fontawesome/css/font-awesome.css">
+    <link rel="stylesheet" href="http://webapplayers.com/luna_admin-v1.3/vendor/animate.css/animate.css">
+    <link rel="stylesheet" href="http://webapplayers.com/luna_admin-v1.3/vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../../static/dataTables.min.css">
+    <link rel="stylesheet" href="../../static/data.css">
+    <link rel="stylesheet" href="http://webapplayers.com/luna_admin-v1.3/styles/pe-icons/pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="http://webapplayers.com/luna_admin-v1.3/styles/pe-icons/helper.css">
+    <link rel="stylesheet" href="http://webapplayers.com/luna_admin-v1.3/styles/stroke-icons/style.css">
+
+</head>
+
+<body class="blank">
+
+    <!-- Wrapper-->
+    <div class="wrapper">
+    
+    
+        <!-- Main content-->
+        <section class="content">
+            <div class="container-center md animated slideInDown">
+    
+                <div class="view-header">
+                        <center>
+                            <h3>404</h3>
+                                <small>
+                                    Page Not Found
+                                </small>
+                        </center>
+                </div>
+    
+                <div class="panel panel-filled">
+                    <div class="panel-body">
+                        Sorry, but the page you are looking for has note been found. Try checking the URL for error, then hit the refresh button on your browser or try found something else in our app.
+    
+                    </div>
+                </div>
+                <div>
+                    <center>
+                    <a href="/" class="btn btn-accent">Back to Landing Page</a>
+                    </center>
+                </div>
+    
+            </div>
+        </section>
+        <!-- End main content-->
+    
+    </div>
+    <!-- End wrapper-->
+    
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="http://webapplayers.com/luna_admin-v1.3/vendor/datatables/datatables.min.js"></script>
+<script src="http://webapplayers.com/luna_admin-v1.3/vendor/pacejs/pace.min.js"></script>
+<script src="http://webapplayers.com/luna_admin-v1.3/vendor/datatables/dataTables/bootstrap4.min.js"></script>
+<script src="http://webapplayers.com/luna_admin-v1.3/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- App scripts -->
+<script src="http://webapplayers.com/luna_admin-v1.3/scripts/luna.js"></script>
+
+
+
+<!--Javascript function to save data inside 'sample' div -->
+                
+<script>
+    $(document).ready(function () {
+
+    $('#tableExample1').DataTable({
+        "dom": 't'
+    });
+
+    $('#tableExample2').DataTable({
+        "dom": "<'row'<'col-sm-6'l><'col-sm-6'f>>t<'row'<'col-sm-6'i><'col-sm-6'p>>",
+        "lengthMenu": [ [6, 25, 50, -1], [6, 25, 50, "All"] ],
+        "iDisplayLength": 6,
+    });
+
+    $('#tableExample3').DataTable({
+        dom: "<'row'<'col-sm-4'l><'col-sm-4 text-center'B><'col-sm-4'f>>tp",
+        "lengthMenu": [ [10, 25, 50, -1], [10, 25, 50, "All"] ],
+        buttons: [
+            {extend: 'copy',className: 'btn-sm'},
+            {extend: 'csv',title: 'prometer', className: 'btn-sm'},
+            {extend: 'pdf', title: 'prometer', className: 'btn-sm'},
+            {extend: 'print',className: 'btn-sm'}
+        ]
+    });
+
+    });
+</script>
+
+</html>
